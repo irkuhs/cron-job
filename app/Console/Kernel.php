@@ -23,7 +23,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('quote:daily')
-        ->everyMinute();
+        ->everyTwoMinutes();
     }
     /**
      * Register the commands for the application.
